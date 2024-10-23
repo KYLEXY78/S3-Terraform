@@ -48,7 +48,7 @@ pipeline {
         }
         failure {
             // Notify on failure
-            echo 'Deployment failed!'
+            echo 'Deployment not successful!'
         }
     }
 }
