@@ -3,8 +3,8 @@ pipeline {
 
     environment {
         // Fetching AWS credentials from Jenkins
-        AWS_ACCESS_KEY_ID = credentials('aws-credentials') // ID for Access Key ID
-        AWS_SECRET_ACCESS_KEY = credentials('aws-credentials') // ID for Secret Access Key
+        AWS_ACCESS_KEY_ID = credentials('aws-access-key') // ID for Access Key ID
+        AWS_SECRET_ACCESS_KEY = credentials('aws-secret-key') // ID for Secret Access Key
     }
 
     stages {
