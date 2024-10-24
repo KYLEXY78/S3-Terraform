@@ -18,21 +18,21 @@ pipeline {
         stage('Terraform Init') {
             steps {
                 // Initialize Terraform
-                sh 'terraform init'
+                bat 'C:\\terraform\\terraform.exe init'
             }
         }
 
         stage('Terraform Plan') {
             steps {
                 // Run Terraform plan
-                sh 'terraform plan'
+                bat 'C:\\terraform\\terraform.exe plan'
             }
         }
 
         stage('Terraform Apply') {
             steps {
                 // Apply the Terraform configuration
-                sh 'terraform apply -auto-approve'
+                bat 'C:\\terraform\\terraform.exe apply -auto-approve'
             }
         }
     }
