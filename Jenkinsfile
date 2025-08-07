@@ -39,7 +39,7 @@ pipeline {
 
     post {
         always {
-            // Clean up, e.g., remove temporary files, if needed
+            // Clean up
             echo 'Cleaning up...'
         }
         success {
